@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px;
+            padding-top: 150px;
+            background-color: antiquewhite;
+        }
+
+        .ig {
+            transition: .3s;
+            transform: rotate(14deg);
+        }
+
+        .main-column:hover .ig {
+            transform: rotate(-53deg);
+        }
+
+
+        img {
+            width: 300px;
+            /* transform: rotate(150deg); */
+        }
+
+        .boll {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            background-color: blue;
+            border: 5px solid red;
+            position: relative;
+            left: 139px;
+            bottom: 29px;
+            transition: 1s ease-out .2s;
+        }
+
+        .main-column:hover .boll {
+            transform: translate(1150px, -600px);
+            transform-origin: right top;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-column">
+            <img class="ig" src="./img/bat.png" alt="">
+            <div class="boll"></div>
+        </div>
+    </div>
+</body>
+
+</html>
