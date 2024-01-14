@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        @keyframes boll {
+            /* from{
+                left: 0;
+            }
+            to{
+                left: 600px;
+                background-color: blue;
+            } */
+
+            0%{
+               left: 0;
+               top: 0;
+
+            }
+            20%{
+                left: 200px;
+                top: 390px;
+
+            }
+            40%{
+                left: 400px;
+                top: 0px;
+                background-color: chartreuse;
+                box-sizing: 1px 1px 10px;
+            }
+            60%{
+                top: 390px;
+                left: 600px;
+                background-color: blue;
+                box-sizing: 1px 1px 10px;
+
+            }
+            80%{
+                left: 800px;
+                top: 0;
+                background-color: #000;
+                box-sizing: 1px 1px 10px;
+
+            }
+            100%{
+                top: 390px;
+                left: 990px;
+                background-color: green;
+                box-sizing: 1px 1px 10px;
+                
+            }
+           
+        }
+       
+        .container{
+            height: 500px;
+            width: 1100px;
+            background-color: antiquewhite;
+            border: 1px solid #000;
+        }
+        .flex-column{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            border: 5px solid #00b1be;
+            position: relative;
+            animation: boll 18s ease-in-out .1s infinite alternate;
+        }
+    </style>
+<div class="container">
+    <div class="flex-column">
+
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>
